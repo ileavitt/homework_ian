@@ -1,0 +1,21 @@
+body {
+    padding: 25px;
+    text-align: center;
+}
+
+.fa {
+    font-size:350px;
+    margin-top:25px;
+}
+
+.blue {
+    color:#0000ff;
+}
+
+.red {
+    color:#ff0000;
+}
+
+.dk-red {
+    color:#8b0000;
+}
