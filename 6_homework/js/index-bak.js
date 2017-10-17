@@ -10,22 +10,22 @@ $('#amount').blur(function () {
 
 // Declare conversion function
 function doTheConversion() {
-    convertedValue = Math.ceil((value - 32) / 1.8);
+    value = Math.ceil((value - 32) / 1.8);
 
-    if (isNaN(convertedValue)) {
-        convertedValue = 'Please enter a number without $';
-        $('#convertedAmount').html(convertedValue);
+    if (isNaN(value)) {
+        value = 'Please enter a number without $';
+        $('#convertedAmount').html(value);
     } else {
-        $('#convertedAmount').html(convertedValue + '&deg; C');
+        $('#convertedAmount').html(value + '&deg; C');
     }
 
-    if (convertedValue <= 16) {
+    if (value <= 16) {
         $('i').removeClass().addClass('fa fa-thermometer-quarter blue');
-    } else if (convertedValue >= 17 && convertedValue <= 24) {
+    } else if (value >= 17 && value <= 24) {
         $('i').removeClass().addClass('fa fa-thermometer-half red');
-    } else if (convertedValue >= 25 && convertedValue <= 30) {
+    } else if (value >= 25 && value <= 30) {
         $('i').removeClass().addClass('fa fa-thermometer-three-quarters dk-red');
-    } else if (convertedValue >= 31) {
+    } else if (value >= 31) {
         $('i').removeClass().addClass('fa fa-thermometer-full dk-red');
     } else {
         $('i').removeClass().addClass('fa fa-thermometer-quarter blue');
