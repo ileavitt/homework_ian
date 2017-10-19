@@ -21,9 +21,9 @@ function doTheConversion() {
 
     if (convertedValue <= 16) {
         $('i').removeClass().addClass('fa fa-thermometer-quarter blue');
-    } else if (convertedValue >= 17 && convertedValue <= 24) {
+    } else if (convertedValue <= 24) {
         $('i').removeClass().addClass('fa fa-thermometer-half red');
-    } else if (convertedValue >= 25 && convertedValue <= 30) {
+    } else if (convertedValue <= 30) {
         $('i').removeClass().addClass('fa fa-thermometer-three-quarters dk-red');
     } else if (convertedValue >= 31) {
         $('i').removeClass().addClass('fa fa-thermometer-full dk-red');
